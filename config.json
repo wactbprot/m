@@ -1,0 +1,15 @@
+{
+  "db":{
+    "server":"localhost",
+    "port":"5984",
+    "path":"vl_db"
+  },
+  "relay":{
+    "server":"localhost",
+    "port":"55555"
+   },
+  "redis":{
+    "server":"127.0.0.1",
+    "port":"6379"
+  }
+}
