@@ -1,0 +1,12 @@
+package cdb
+
+import(
+//	couch "github.com/dustin/go-couch"
+	log "github.com/inconshreveable/log15"
+	redis "gopkg.in/redis.v5"
+)
+
+func GetDef (ds *redis.Client, id string) {
+	cn := ds.HMGet("config:db" , "server", "port")
+	log.Debug(cn.String())
+}

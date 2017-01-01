@@ -1,6 +1,9 @@
 package main
 
-import "github.com/wactbprot/m/ini"
+import (
+	"github.com/wactbprot/m/ini"
+	"github.com/wactbprot/m/cdb"
+)
 
 func main() {
 
@@ -12,4 +15,5 @@ func main() {
 
 	db := ini.GetDbClient(config)
 	ini.TestDbClient(db)
+	cdb.GetDef(db, "mpd-ce3-calib")
 }
