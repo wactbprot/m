@@ -5,7 +5,7 @@ import (
 	log "github.com/inconshreveable/log15"
 	//	redis "gopkg.in/redis.v5"
 )
-// ... new mor simpler mpdef struct here ... 
+// ... new more simpler mpdef struct here ... 
 func GetDef(db couch.Database, id string) (mp MpDef) {
 	err := db.Retrieve(id, &mp)
 	if err!= nil {
